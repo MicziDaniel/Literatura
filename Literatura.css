@@ -26,8 +26,14 @@ body{
     max-width: 2500px;
 }
 
+.reviews{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+
 .review{
-    margin: 50px;
+    margin: 50px 0;
     width: 500px;
     height: 500px;
     background-color: #343a40;
@@ -57,6 +63,10 @@ body{
     background-color: #343a40c0;
     margin: 20px;
     border-radius: 50px;
+}
+
+.title-text{
+    display: block;
 }
 
 form{
@@ -109,4 +119,41 @@ h1{
     */
     color:transparent;
     -webkit-background-clip:text;
+}
+
+@media only screen and (max-width: 1839px) 
+{
+    .reviews{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 1239px) 
+{
+    .reviews{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width: 619px) 
+{
+    .review{
+        width: 300px;
+        height: 150px;
+        margin: 20px 0;
+    }
+    .review-img{
+        height: 150px;
+    }
+    .review-text{
+        font-size: 10px;
+        width: 185px;
+        height: 150px;
+        padding: 0 8px;
+        margin-right: 10px;
+        line-height: 150px;
+    }
+    span{
+        line-height: 13px;
+    }
 }
