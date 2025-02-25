@@ -147,6 +147,7 @@ h1{
         width: 300px;
         height: 150px;
         margin: 20px 0;
+        border-radius: 30px;
     }
     .review-img{
         height: 150px;
