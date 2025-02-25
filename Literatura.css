@@ -2,7 +2,7 @@ body{
     background-color: #343a40a1;
 }
 
-#line-button{
+.line-button{
     background-color: rgba(0, 0, 0, 0);
 }
 
@@ -13,11 +13,51 @@ body{
 
 #lines{
     height: 40px;
-    margin: 5px;
+    margin: auto;
 }
 
 #insta{
     height: 40px;
+}
+
+#menu{
+    height: 100vh;
+    width: 20%;
+    min-width: 250px;
+    background-color: #343a40;
+    float: left;
+    display: none;
+    position: absolute;
+    z-index: 1000
+}
+
+#menu form{
+    width: 60%;
+    float: right;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 30px;
+}
+
+#menu .line-button{
+    height: 58px;
+    padding: 7px;
+    margin-left: 5%;
+    margin-top: 20px;
+}
+
+#menu .line-button img{
+    height: 44px;
+}
+
+#wrap{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background: #343a4050;
+    z-index: 500;
+    backdrop-filter: blur(10px);
+    display: none;
 }
 
 .container{
@@ -69,10 +109,20 @@ body{
     display: block;
 }
 
-form{
+#body form{
     margin-left: 100px;
     margin-right: 100px;
     margin-top: 16px;
+}
+
+button{
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
 }
 
 li{
@@ -125,7 +175,6 @@ h1{
 {
     .reviews{
         grid-template-columns: 1fr 1fr;
-        justify-items: center;
     }
 }
 
@@ -133,16 +182,11 @@ h1{
 {
     .reviews{
         grid-template-columns: 1fr;
-        justify-items: center;
     }
 }
 
 @media only screen and (max-width: 619px) 
 {
-    .reviews{
-        grid-template-columns: 1fr;
-        justify-items: center;
-    }
     .review{
         width: 300px;
         height: 150px;
