@@ -2,6 +2,12 @@ body{
     background-color: #343a40a1;
 }
 
+#body{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
 .line-button{
     background-color: rgba(0, 0, 0, 0);
 }
@@ -77,13 +83,13 @@ body{
     width: 500px;
     height: 500px;
     background-color: #343a40;
-    border-radius: 10%;
+    border-radius: 30px;
     display: inline-block;
 }
 
 .review-img{
     height: 500px;
-    border-radius: 10%;
+    border-radius: 30px;
 }
 
 .review-text{
