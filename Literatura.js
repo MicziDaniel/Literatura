@@ -29,16 +29,16 @@ function menu(){
 }
 
 function hover(element){
+    console.log(element.children[0].offsetHeight)
     element.style.border = "solid white 2px"
-    element.children[0].style.height = "496px"
+    element.children[0].style.height = String(element.children[0].offsetHeight - 4) + "px"
     element.children[0].style.borderRadius = "26px"
 }
 
 function notHover(element){
-    element.style.border = "none"
-    element.children[0].style.height = "500px"
-    element.children[0].style.borderRadius = "30px"
-
+    element.style.removeProperty('border');
+    element.children[0].style.removeProperty('height')
+    element.children[0].style.removeProperty('borderRadius')
 }
 
 function review(){
