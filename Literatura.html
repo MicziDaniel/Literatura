@@ -10,7 +10,7 @@
     <title>Literatura</title>
 </head>
 <body>
-  <div id="menu">
+  <div id="menu" class="hide">
     <button class="line-button">
       <img src="images/3lines.png" id="lines" srcset="">
     </button>
@@ -20,7 +20,7 @@
     </form>
   </div>
 
-  <div id="wrap"></div>
+  <div id="wrap" class="hide"></div>
   <header class="p-3 bg-dark text-white">
       <div class="container">
         <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
@@ -33,10 +33,10 @@
           </form>
           
           <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-            <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
-            <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
-            <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
-            <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+            <li><a href="#" class="nav-link px-2 text-secondary" id="home">Home</a></li>
+            <li><a href="#" class="nav-link px-2 text-secondary">Features</a></li>
+            <li><a href="#" class="nav-link px-2 text-secondary">FAQs</a></li>
+            <li><a href="#" class="nav-link px-2 text-secondary">About</a></li>
             <li><a href="" class="text-decoration-none"><img src="images/Instagram_icon.png" id="insta" srcset=""></a></li>
           </ul>
           <!--
@@ -55,24 +55,90 @@
         <h1>Rebecca Yarros</h1>
       </div>
       <div class="reviews">
-        <div class="review" onmouseover="hover(this)" onmouseout="notHover(this)" id="fourthWing">
+        <div class="review" onmouseover="hover(this)" onmouseout="notHover(this)" id="vmi">
           <img src="images/fourthWing.jpg" class="img-fluid review-img" alt="">
             <div class="review-text">
               <span>It’s a winner. The reviews here are fortunately all true. Dynamite… New-Adult/College-life has never been this darn exciting. From the first chapter you are transported into utter chaos, mayhem   and madness— with danger at every corner. A instant “hate” relationship between the two love/leads characters, with a host of amazingly secondary characters, that make up this phenomenal saga. </span>
             </div>
+            <span class="hide">fourthWing</span>
         </div>
-        <div class="review" id="ironFlame">
+        <div class="review" onmouseover="hover(this)" onmouseout="notHover(this)">
           <img src="images/ironFlame.jpg" class="img-fluid review-img" alt="">
             <div class="review-text">
               <span>The first half of this book is unbearably slow and has its protagonist change from an intelligent, somewhat sassy warrior to an insufferable and insecure hypocrite. Every other chapter has Xaden  and Violet fighting over some sort of misunderstanding or secret, followed by an extremely graphic make out session. </span>
             </div>
+            <span class="hide">ironFlame</span>
         </div>
-        <div class="review" id="onyxStorm">
+        <div class="review" onmouseover="hover(this)" onmouseout="notHover(this)">
           <img src="images/onyxStorm.jpg" class="img-fluid review-img" alt="">
             <div class="review-text">
               <span>The excitement, the magic, the battles and love story all come together to create such a scene in your head that it’s like a movie unfolding as you read. Her characters are incredibly personable  and realistic, with diseases and handicaps and different lifestyles all being accepted and normal.</span>
             </div>
+            <span class="hide">onyxStorm</span>
         </div>
+      </div>
+    </div>
+  </div>
+  <div id="fourthWing" class="hide review-page">
+    <div class="book">
+      <img src="images/fourthWing.jpg" class="img-fluid" alt="">
+      <span>Fourth Wing</span>
+    </div>
+    <div class="review-page-textbox">
+      <header><span>★★★★★</span></header>
+      <div class="review-page-text">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a ligula pharetra, facilisis mauris sit amet, viverra nisi. Donec ultrices sapien et bibendum faucibus. Nullam ac consectetur diam. Sed varius sem nisi, gravida venenatis ex malesuada a. Fusce nisl nulla, tristique sit amet faucibus in, venenatis in quam. Vestibulum posuere luctus molestie. Phasellus dignissim elit et laoreet dapibus. Pellentesque feugiat leo vitae quam feugiat dictum. Maecenas et neque tempor ligula condimentum tempus. Etiam ullamcorper sem nibh, eget semper enim sagittis sit amet. Donec cursus vestibulum vehicula. Maecenas lacus eros, aliquam a eros in, imperdiet congue tortor. Mauris nibh diam, aliquet non orci vel, efficitur bibendum elit. Cras vitae sem eget lorem mollis laoreet. Nulla semper at mauris et venenatis. Sed a dolor nec ligula bibendum fringilla.
+          
+          Etiam vel fermentum purus. Sed eu laoreet quam, ut consequat eros. Nulla aliquet vehicula felis eget tincidunt. Aenean nec lacinia lacus, eu dictum mi. Curabitur porttitor, mauris a cursus dapibus, quam sem vulputate justo, in tincidunt libero ipsum quis sem. Suspendisse ligula turpis, ullamcorper et ante ac, laoreet volutpat erat. Donec tincidunt nec sapien eu porta. Cras a tellus nisi. Cras volutpat augue at nulla suscipit rhoncus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed ac congue arcu.
+          
+          Curabitur tincidunt sem vel lacinia molestie. Curabitur nec velit dignissim, viverra lorem ac, congue tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas eu massa ac elit ornare facilisis finibus eu risus. Aenean in vehicula felis, sit amet pellentesque felis. Curabitur in rhoncus ante, eget accumsan sem. Phasellus id porttitor risus, ut commodo arcu.
+          
+          Curabitur ultricies lobortis scelerisque. Integer eleifend convallis accumsan. Aliquam erat volutpat. Mauris ut lectus quis massa maximus tristique quis vel risus. Donec rhoncus, neque at tempus porta, risus magna iaculis neque, eget finibus neque justo ac purus. Ut maximus augue ex, eu vehicula purus interdum sed. Phasellus imperdiet efficitur magna a cursus. Nullam rutrum sem id tellus dapibus posuere. Sed eget metus vitae ligula ultricies blandit quis ac erat. Nullam vel scelerisque metus, in iaculis nisl. Proin malesuada ex lacus. Pellentesque malesuada nulla eget suscipit congue. Vestibulum a sapien et lacus fringilla tristique eu ac eros. Nunc posuere posuere turpis, non accumsan mauris congue quis. Pellentesque aliquet tellus ipsum, nec porttitor mauris scelerisque et.
+          
+          Morbi quis justo ut arcu accumsan dapibus. Vestibulum turpis mauris, placerat nec nunc vitae, efficitur porttitor magna. Nulla ut mauris non nisi sollicitudin convallis. Mauris pulvinar sed lorem id bibendum. Duis tincidunt nunc nisi, in suscipit mauris consectetur eget. Nullam tellus lacus, imperdiet et mi quis, pellentesque ornare purus. Aenean gravida elit risus, non efficitur ligula pharetra sed. Nunc et consectetur lacus, sed tempor lacus. Praesent mattis augue nulla, id consectetur lacus posuere nec. Nunc sed sapien et risus pharetra dictum. Donec id dolor vulputate, sollicitudin sem in, auctor mauris. Integer quis dui quis risus pretium varius. Fusce efficitur augue maximus, luctus odio eu, porta lectus. Curabitur vel nunc sem. Phasellus dapibus, urna at cursus viverra, felis justo sagittis magna, vitae molestie dolor urna vitae nunc.</p>
+      </div>
+    </div>
+  </div>
+  <div id="ironFlame" class="hide review-page">
+    <div class="book">
+      <img src="images/ironFlame.jpg" class="img-fluid" alt="">
+      <span>Iron Flame</span>
+    </div>
+    <div class="review-page-textbox">
+      <header><span>★★★☆☆</span></header>
+      <div class="review-page-text">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a ligula pharetra, facilisis mauris sit amet, viverra nisi. Donec ultrices sapien et bibendum faucibus. Nullam ac consectetur diam. Sed varius sem nisi, gravida venenatis ex malesuada a. Fusce nisl nulla, tristique sit amet faucibus in, venenatis in quam. Vestibulum posuere luctus molestie. Phasellus dignissim elit et laoreet dapibus. Pellentesque feugiat leo vitae quam feugiat dictum. Maecenas et neque tempor ligula condimentum tempus. Etiam ullamcorper sem nibh, eget semper enim sagittis sit amet. Donec cursus vestibulum vehicula. Maecenas lacus eros, aliquam a eros in, imperdiet congue tortor. Mauris nibh diam, aliquet non orci vel, efficitur bibendum elit. Cras vitae sem eget lorem mollis laoreet. Nulla semper at mauris et venenatis. Sed a dolor nec ligula bibendum fringilla.
+          
+          Etiam vel fermentum purus. Sed eu laoreet quam, ut consequat eros. Nulla aliquet vehicula felis eget tincidunt. Aenean nec lacinia lacus, eu dictum mi. Curabitur porttitor, mauris a cursus dapibus, quam sem vulputate justo, in tincidunt libero ipsum quis sem. Suspendisse ligula turpis, ullamcorper et ante ac, laoreet volutpat erat. Donec tincidunt nec sapien eu porta. Cras a tellus nisi. Cras volutpat augue at nulla suscipit rhoncus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed ac congue arcu.
+          
+          Curabitur tincidunt sem vel lacinia molestie. Curabitur nec velit dignissim, viverra lorem ac, congue tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas eu massa ac elit ornare facilisis finibus eu risus. Aenean in vehicula felis, sit amet pellentesque felis. Curabitur in rhoncus ante, eget accumsan sem. Phasellus id porttitor risus, ut commodo arcu.
+          
+          Curabitur ultricies lobortis scelerisque. Integer eleifend convallis accumsan. Aliquam erat volutpat. Mauris ut lectus quis massa maximus tristique quis vel risus. Donec rhoncus, neque at tempus porta, risus magna iaculis neque, eget finibus neque justo ac purus. Ut maximus augue ex, eu vehicula purus interdum sed. Phasellus imperdiet efficitur magna a cursus. Nullam rutrum sem id tellus dapibus posuere. Sed eget metus vitae ligula ultricies blandit quis ac erat. Nullam vel scelerisque metus, in iaculis nisl. Proin malesuada ex lacus. Pellentesque malesuada nulla eget suscipit congue. Vestibulum a sapien et lacus fringilla tristique eu ac eros. Nunc posuere posuere turpis, non accumsan mauris congue quis. Pellentesque aliquet tellus ipsum, nec porttitor mauris scelerisque et.
+          
+          Morbi quis justo ut arcu accumsan dapibus. Vestibulum turpis mauris, placerat nec nunc vitae, efficitur porttitor magna. Nulla ut mauris non nisi sollicitudin convallis. Mauris pulvinar sed lorem id bibendum. Duis tincidunt nunc nisi, in suscipit mauris consectetur eget. Nullam tellus lacus, imperdiet et mi quis, pellentesque ornare purus. Aenean gravida elit risus, non efficitur ligula pharetra sed. Nunc et consectetur lacus, sed tempor lacus. Praesent mattis augue nulla, id consectetur lacus posuere nec. Nunc sed sapien et risus pharetra dictum. Donec id dolor vulputate, sollicitudin sem in, auctor mauris. Integer quis dui quis risus pretium varius. Fusce efficitur augue maximus, luctus odio eu, porta lectus. Curabitur vel nunc sem. Phasellus dapibus, urna at cursus viverra, felis justo sagittis magna, vitae molestie dolor urna vitae nunc.</p>
+      </div>
+    </div>
+  </div>
+  <div id="onyxStorm" class="hide review-page">
+    <div class="book">
+      <img src="images/onyxStorm.jpg" class="img-fluid" alt="">
+      <span>Onyx Storm</span>
+    </div>
+    <div class="review-page-textbox">
+      <header><span>★☆☆☆☆</span></header>
+      <div class="review-page-text">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a ligula pharetra, facilisis mauris sit amet, viverra nisi. Donec ultrices sapien et bibendum faucibus. Nullam ac consectetur diam. Sed varius sem nisi, gravida venenatis ex malesuada a. Fusce nisl nulla, tristique sit amet faucibus in, venenatis in quam. Vestibulum posuere luctus molestie. Phasellus dignissim elit et laoreet dapibus. Pellentesque feugiat leo vitae quam feugiat dictum. Maecenas et neque tempor ligula condimentum tempus. Etiam ullamcorper sem nibh, eget semper enim sagittis sit amet. Donec cursus vestibulum vehicula. Maecenas lacus eros, aliquam a eros in, imperdiet congue tortor. Mauris nibh diam, aliquet non orci vel, efficitur bibendum elit. Cras vitae sem eget lorem mollis laoreet. Nulla semper at mauris et venenatis. Sed a dolor nec ligula bibendum fringilla.
+          
+          Etiam vel fermentum purus. Sed eu laoreet quam, ut consequat eros. Nulla aliquet vehicula felis eget tincidunt. Aenean nec lacinia lacus, eu dictum mi. Curabitur porttitor, mauris a cursus dapibus, quam sem vulputate justo, in tincidunt libero ipsum quis sem. Suspendisse ligula turpis, ullamcorper et ante ac, laoreet volutpat erat. Donec tincidunt nec sapien eu porta. Cras a tellus nisi. Cras volutpat augue at nulla suscipit rhoncus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed ac congue arcu.
+          
+          Curabitur tincidunt sem vel lacinia molestie. Curabitur nec velit dignissim, viverra lorem ac, congue tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas eu massa ac elit ornare facilisis finibus eu risus. Aenean in vehicula felis, sit amet pellentesque felis. Curabitur in rhoncus ante, eget accumsan sem. Phasellus id porttitor risus, ut commodo arcu.
+          
+          Curabitur ultricies lobortis scelerisque. Integer eleifend convallis accumsan. Aliquam erat volutpat. Mauris ut lectus quis massa maximus tristique quis vel risus. Donec rhoncus, neque at tempus porta, risus magna iaculis neque, eget finibus neque justo ac purus. Ut maximus augue ex, eu vehicula purus interdum sed. Phasellus imperdiet efficitur magna a cursus. Nullam rutrum sem id tellus dapibus posuere. Sed eget metus vitae ligula ultricies blandit quis ac erat. Nullam vel scelerisque metus, in iaculis nisl. Proin malesuada ex lacus. Pellentesque malesuada nulla eget suscipit congue. Vestibulum a sapien et lacus fringilla tristique eu ac eros. Nunc posuere posuere turpis, non accumsan mauris congue quis. Pellentesque aliquet tellus ipsum, nec porttitor mauris scelerisque et.
+          
+          Morbi quis justo ut arcu accumsan dapibus. Vestibulum turpis mauris, placerat nec nunc vitae, efficitur porttitor magna. Nulla ut mauris non nisi sollicitudin convallis. Mauris pulvinar sed lorem id bibendum. Duis tincidunt nunc nisi, in suscipit mauris consectetur eget. Nullam tellus lacus, imperdiet et mi quis, pellentesque ornare purus. Aenean gravida elit risus, non efficitur ligula pharetra sed. Nunc et consectetur lacus, sed tempor lacus. Praesent mattis augue nulla, id consectetur lacus posuere nec. Nunc sed sapien et risus pharetra dictum. Donec id dolor vulputate, sollicitudin sem in, auctor mauris. Integer quis dui quis risus pretium varius. Fusce efficitur augue maximus, luctus odio eu, porta lectus. Curabitur vel nunc sem. Phasellus dapibus, urna at cursus viverra, felis justo sagittis magna, vitae molestie dolor urna vitae nunc.</p>
       </div>
     </div>
   </div>

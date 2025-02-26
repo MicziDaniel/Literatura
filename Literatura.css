@@ -32,7 +32,6 @@ body{
     min-width: 250px;
     background-color: #343a40;
     float: left;
-    display: none;
     position: absolute;
     z-index: 1000
 }
@@ -63,7 +62,6 @@ body{
     background: #343a4050;
     z-index: 500;
     backdrop-filter: blur(10px);
-    display: none;
 }
 
 .container{
@@ -113,6 +111,91 @@ body{
 
 .title-text{
     display: block;
+}
+
+.hide{
+    display: none;
+}
+
+.review-page{
+    width: 100%;
+    height: 500px;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+.book{
+    width: 100%;
+    height: max-content;
+    border-right: solid 3px #343a40;
+}
+
+.review-page img{
+    border: solid 5px #343a40;
+    width: 350px;
+    display: block;
+    margin: auto;
+}
+
+.review-page span{
+    display: block;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    -webkit-text-stroke: 3px #343a40;
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.review-page-textbox{
+    margin: auto;
+    width: 80%;
+    height: 500px;
+    background-color: #343a4099;
+    border: solid 10px #343a40;
+    border-radius: 30px;
+}
+
+.review-page-textbox header{
+    background-color: #343a40;
+    height: 15%;
+    margin-bottom: 0;
+}
+
+.review-page-textbox header span{
+    font-family: 'Times New Roman',serif;
+    background-image: linear-gradient(
+    to right,
+    #462523 0,
+    #cb9b51 1%, 
+    #f6e27a 8%,
+    #f6f2c0 10%,
+    #f6e27a 12%,
+    #cb9b51 14%,
+    #462523 100%
+    );
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip:text;
+    -webkit-text-stroke: 0px #343a40;
+
+    height: 60px;
+    font-size: 40px;
+    margin-top: 0;
+    text-align: left;
+    padding-top: 5%;
+    padding-left: 10px;
+}
+
+.review-page-text{
+    height: 370px;
+    overflow-y: scroll;
+    scrollbar-color: #343a40;
+    color: white;
+    font-size: 1rem;
+    margin-top: 20px;
+    padding-left: 20px;
 }
 
 #body form{
@@ -178,6 +261,7 @@ h1{
     );
     */
     color:transparent;
+    background-clip: text;
     -webkit-background-clip:text;
 }
 
@@ -192,6 +276,33 @@ h1{
 {
     .reviews{
         grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width: 999px) 
+{
+    .review-page{
+        grid-template-columns: 1fr;
+    }
+    .book{
+        border: none;
+    }
+    .review-page-textbox{
+        height: auto;
+        margin-top: 80px;
+    }
+    .review-page-textbox header{
+        height: 15vw;
+    }
+    .review-page-textbox header span{
+        font-size: 8vw;
+        height: 8vw;
+    }
+    .review-page-text{
+        height: auto;
+        font-size: 4vw;
+        overflow-y: visible;
+        padding-right: 20px;
     }
 }
 

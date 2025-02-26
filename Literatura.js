@@ -8,9 +8,11 @@ document.addEventListener("DOMContentLoaded", function(){
 
     let reviews = document.getElementsByClassName("review")
     for(let i = 0; i < reviews.length; i++){
-        reviews[i].addEventListener("mouseover", hover(i))
-        reviews[i].addEventListener("click", review)
+        reviews[i].addEventListener("click", function(){review(reviews[i])})
     }
+
+    let home = document.getElementById("home")
+    home.addEventListener("click", returnHome)
 });
 
 function menu(){
@@ -29,10 +31,9 @@ function menu(){
 }
 
 function hover(element){
-    console.log(element.children[0].offsetHeight)
     element.style.border = "solid white 2px"
-    element.children[0].style.height = String(element.children[0].offsetHeight - 4) + "px"
-    element.children[0].style.borderRadius = "26px"
+    element.children[0].style.height = String(element.offsetHeight - 4) + "px"
+    element.children[0].style.borderRadius = "28px"
 }
 
 function notHover(element){
@@ -41,6 +42,20 @@ function notHover(element){
     element.children[0].style.removeProperty('borderRadius')
 }
 
-function review(){
+function review(element){
+    document.getElementById("body").style.display = "none"
+    document.getElementById(element.children[2].innerText).style.display = "grid"
 
+    document.getElementById("home").classList.replace("text-secondary", "text-white")
+}
+
+function returnHome(){
+    document.getElementById("body").style.removeProperty("display")
+
+    reviewPage = document.getElementsByClassName("review-page")
+    for(let i = 0; i < reviewPage.length; i++){
+        reviewPage[i].style.removeProperty("display")
+    }
+
+    document.getElementById("home").classList.replace("text-white", "text-secondary")
 }
